@@ -1,33 +1,20 @@
-import './App.css';
+import '../src/styles/App.css';
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import HomePage from './Components/HomePage';
 import AboutPage from './Components/AboutPage';
 
 function App() {
-
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <main className="main">
+        <header className="header">
+          <nav className="navigation">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+          </nav>
+        </header>
         <Switch>
           <Route path="/about">
             <AboutPage />
@@ -36,7 +23,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }
