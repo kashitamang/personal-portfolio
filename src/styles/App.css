@@ -76,11 +76,7 @@ p {
 }
 
 .media-links h4 a :hover {
-    opacity: 20%;
-}
-
-.media-links h4 a :active {
-    opacity: 100%;
+    cursor: pointer;
 }
 
 .rotate:hover

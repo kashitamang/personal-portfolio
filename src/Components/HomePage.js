@@ -20,7 +20,7 @@ export default function HomePage() {
       </div>
       <h2>
         I&rsquo;m a Full Stack Developer in Portland, Oregon currently working on solo projects like
-        this one.
+        this one...
       </h2>
       <p>While we are under construction here, would you like to check out some of my projects?</p>
       <div className="media-links">
