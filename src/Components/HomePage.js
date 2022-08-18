@@ -4,6 +4,7 @@ import avatar from '../avatar.jpg';
 import githubLogo from '../GitHub_Logo_White.png';
 
 export default function HomePage() {
+  console.log('sneakin around?');
   return (
     <div className="homepage">
       <div className="greeting">
@@ -25,7 +26,7 @@ export default function HomePage() {
       <p>While we are under construction here, would you like to check out some of my projects?</p>
       <div className="media-links">
         <h4>
-          find me on <a><img src={githubLogo} alt="black github logo" className="rotate"></img></a>
+          find me on <a href="https://github.com/kashitamang"><img src={githubLogo} alt="black github logo" className="rotate"></img></a>
         </h4>
       </div>
     </div>
