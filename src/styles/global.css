@@ -4,6 +4,10 @@
   --light-grey: #AFAFB0;
   --middle-grey: #404756;
   --dark-grey: #282C34;
+  --almost-black: #0d1117;
+
+  --green: #238636;
+  --blue: #58A6FF;
 
   --yellow: #FDB92D;
 
@@ -16,7 +20,7 @@ body {
   font-family: var(--apple-system);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--dark-grey);
+  background-color: var(--almost-black);
   color: var(--lightest-grey);
   display: flex;
   flex-direction: row;
@@ -29,9 +33,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  background-color: var(--middle-grey);
-  border-radius: 5px;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--dark-grey);
 }
 
 header a {

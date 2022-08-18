@@ -1,0 +1,91 @@
+h1 {
+  font-size: 4rem;
+  color: var(--lightest-grey);
+}
+
+img {
+  height: 300px;
+}
+
+h2 {
+  color: var(--green);
+}
+
+h4 {
+    color: var(--light-grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.media-links h4 a img {
+    height: 25px;
+}
+
+/* animation */
+
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+.wave:hover {
+    cursor: pointer;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.media-links h4 a :hover {
+    opacity: 20%;
+}
+
+.media-links h4 a :active {
+    opacity: 100%;
+}
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(7deg);
+        -ms-transform: rotateZ(7deg);
+        transform: rotateZ(7deg);
+}
