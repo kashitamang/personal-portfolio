@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import HomePage from './Components/HomePage';
 
 function App() {
-
   const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
     if (theme === 'dark') {
@@ -20,13 +19,17 @@ function App() {
       <main className={`App ${theme}`}>
         <header className="header">
           <nav className="navigation">
-            <Link to="/">Home</Link>
+            <Link title="home" to="/">
+              Home
+            </Link>
           </nav>
-          <button 
-            title=''
-            className={`material-symbols-${(theme === 'dark') ? 'outlined' : 'rounded'}`}
-            onClick={toggleTheme}>
-            {`${(theme === 'dark') ? 'dark_mode' : 'light_mode'}`}
+          <button
+            title="change theme"
+            className={`material-symbols-${theme === 'dark' ? 'outlined' : 'rounded'}`}
+            theme={theme}
+            onClick={toggleTheme}
+          >
+            {`${theme === 'dark' ? 'dark_mode' : 'light_mode'}`}
           </button>
         </header>
         <Switch>
