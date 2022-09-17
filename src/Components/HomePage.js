@@ -4,7 +4,7 @@ import avatar from '../avatar.jpg';
 import githubLogo from '../GitHub_Logo_White.png';
 
 export default function HomePage() {
-  console.log('sneakin around?');
+  console.log('sneakin around?'); //eslint-disable-line
   return (
     <div className="homepage">
       <div className="greeting">
