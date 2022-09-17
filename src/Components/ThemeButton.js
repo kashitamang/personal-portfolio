@@ -1,13 +1,23 @@
 import '../styles/App.css';
 import { React } from 'react';
 
-export default function ThemeButton() {
+export default function ThemeButton({ theme, setTheme }) {
+
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+    } else {
+      setTheme('dark');
+    }
+  };
   return (
-    <button>
-      {
-        //maybe take all props from the intro page and declare them here, pass them into the homepage
-        //and then try to export/import this as a component
-      }
+    <button
+      title="change theme"
+      className={`material-symbols-${theme === 'dark' ? 'outlined' : 'rounded'}`}
+      theme={theme}
+      onClick={toggleTheme}
+    >
+      {`${theme === 'dark' ? 'dark_mode' : 'light_mode'}`}
     </button>
   );
 }

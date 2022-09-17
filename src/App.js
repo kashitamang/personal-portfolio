@@ -3,16 +3,10 @@ import { React, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import HomePage from './Components/HomePage';
+import ThemeButton from './Components/ThemeButton';
 
 function App() {
   const [theme, setTheme] = useState('dark');
-  const toggleTheme = () => {
-    if (theme === 'dark') {
-      setTheme('light');
-    } else {
-      setTheme('dark');
-    }
-  };
 
   return (
     <Router>
@@ -23,14 +17,9 @@ function App() {
               Home
             </Link>
           </nav>
-          <button
-            title="change theme"
-            className={`material-symbols-${theme === 'dark' ? 'outlined' : 'rounded'}`}
-            theme={theme}
-            onClick={toggleTheme}
-          >
-            {`${theme === 'dark' ? 'dark_mode' : 'light_mode'}`}
-          </button>
+          <ThemeButton 
+            theme={theme} 
+            setTheme={setTheme}/>
         </header>
         <Switch>
           <Route path="/">
