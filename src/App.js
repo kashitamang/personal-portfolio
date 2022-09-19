@@ -17,8 +17,7 @@ import Footer from './Components/Footer';
 function App() {
 
   const {
-    theme,
-    setTheme
+    theme
   } = useThemeContext();
 
 
@@ -31,7 +30,7 @@ function App() {
               Home
             </Link>
           </nav>
-          <ThemeButton theme={theme} setTheme={setTheme} />
+          <ThemeButton/>
         </header>
         <Switch>
           <Route path="/">

@@ -8,6 +8,7 @@ export default function ThemeProvider({ children }) {
   const stateAndSetters = {
     theme,
     setTheme,
+    //more state 
   };
 
   return <ThemeContext.Provider value={stateAndSetters}>{children}</ThemeContext.Provider>;
