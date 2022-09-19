@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/App.css';
-import avatar from '../avatar.jpg';
-import githubLogo from '../GitHub_Logo_White.png';
+import '../styles/HomePage.css';
+import avatar from '../assets/avatar.jpg';
+import githubLogo from '../assets/avatar.jpg';
 
 export default function HomePage() {
   console.log('sneakin around?'); //eslint-disable-line
@@ -20,7 +20,7 @@ export default function HomePage() {
         ></img>
       </div>
       <h2>
-        I&rsquo;m a Full Stack Developer in Portland, Oregon currently working on solo projects like
+        I&rsquo;m a Full Stack Software Engineer in Portland, Oregon currently working on solo projects like
         this one...
       </h2>
       <p>While we are under construction here, would you like to check out some of my projects?</p>

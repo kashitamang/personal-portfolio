@@ -1,4 +1,5 @@
 import '../src/styles/App.css';
+import '../src/styles/global.css';
 import { React, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
