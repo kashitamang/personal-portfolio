@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/HomePage.css';
 import avatar from '../assets/avatar.jpg';
-import githubLogo from '../assets/avatar.jpg';
 
 export default function HomePage() {
   console.log('sneakin around?'); //eslint-disable-line
@@ -24,11 +23,6 @@ export default function HomePage() {
         this one...
       </h2>
       <p>While we are under construction here, would you like to check out some of my projects?</p>
-      <div className="media-links">
-        <h4>
-          find me on <a href="https://github.com/kashitamang"><img src={githubLogo} alt="black github logo" className="rotate"></img></a>
-        </h4>
-      </div>
     </div>
   );
 }

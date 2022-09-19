@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import HomePage from './Components/HomePage';
 import ThemeButton from './Components/ThemeButton';
-
+import Footer from './Components/Footer';
 function App() {
   const [theme, setTheme] = useState('dark');
 
@@ -18,15 +18,16 @@ function App() {
               Home
             </Link>
           </nav>
-          <ThemeButton 
-            theme={theme} 
-            setTheme={setTheme}/>
+          <ThemeButton theme={theme} setTheme={setTheme} />
         </header>
         <Switch>
           <Route path="/">
             <HomePage />
           </Route>
         </Switch>
+        <footer>
+          <Footer/>
+        </footer>
       </main>
     </Router>
   );
