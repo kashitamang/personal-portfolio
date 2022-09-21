@@ -1,12 +1,26 @@
+import { 
+  BrowserRouter as Router, 
+  Switch, 
+  Route, 
+  Link 
+} from 'react-router-dom';
+import { React } from 'react';
+//styles
 import '../src/styles/App.css';
-import { React, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import '../src/styles/global.css';
+// components
+import { useThemeContext } from './ThemeProvider';
 import HomePage from './Components/HomePage';
 // import ThemeButton from './Components/ThemeButton';
+import Footer from './Components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+
+  const {
+    theme, 
+    // setTheme
+  } = useThemeContext();
+
 
   return (
     <Router>
@@ -17,13 +31,18 @@ function App() {
               Home
             </Link>
           </nav>
-//           <ThemeButton theme={theme} setTheme={setTheme}/>
+          {/* <ThemeButton 
+            theme={theme} 
+            setTheme={setTheme}/> */}
         </header>
         <Switch>
           <Route path="/">
             <HomePage />
           </Route>
         </Switch>
+        <footer>
+          <Footer/>
+        </footer>
       </main>
     </Router>
   );
