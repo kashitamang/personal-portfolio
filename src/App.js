@@ -3,7 +3,7 @@ import { React, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import HomePage from './Components/HomePage';
-import ThemeButton from './Components/ThemeButton';
+// import ThemeButton from './Components/ThemeButton';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -17,9 +17,7 @@ function App() {
               Home
             </Link>
           </nav>
-          <ThemeButton 
-            theme={theme} 
-            setTheme={setTheme}/>
+//           <ThemeButton theme={theme} setTheme={setTheme}/>
         </header>
         <Switch>
           <Route path="/">
