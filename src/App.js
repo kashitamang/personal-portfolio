@@ -11,14 +11,14 @@ import '../src/styles/global.css';
 // components
 import { useThemeContext } from './ThemeProvider';
 import HomePage from './Components/HomePage';
-import ThemeButton from './Components/ThemeButton';
+// import ThemeButton from './Components/ThemeButton';
 import Footer from './Components/Footer';
 
 function App() {
 
   const {
     theme, 
-    setTheme
+    // setTheme
   } = useThemeContext();
 
 
@@ -31,9 +31,9 @@ function App() {
               Home
             </Link>
           </nav>
-          <ThemeButton 
+          {/* <ThemeButton 
             theme={theme} 
-            setTheme={setTheme}/>
+            setTheme={setTheme}/> */}
         </header>
         <Switch>
           <Route path="/">
