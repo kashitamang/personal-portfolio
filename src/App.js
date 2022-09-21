@@ -11,17 +11,14 @@ import '../src/styles/global.css';
 // components
 import { useThemeContext } from './ThemeProvider';
 import HomePage from './Components/HomePage';
-<<<<<<< HEAD
 import ThemeButton from './Components/ThemeButton';
 import Footer from './Components/Footer';
-=======
-// import ThemeButton from './Components/ThemeButton';
->>>>>>> 482939205fd702f4850b9126d98fcc8ca25664a4
 
 function App() {
 
   const {
-    theme
+    theme, 
+    setTheme
   } = useThemeContext();
 
 
@@ -34,11 +31,9 @@ function App() {
               Home
             </Link>
           </nav>
-<<<<<<< HEAD
-          <ThemeButton/>
-=======
-//           <ThemeButton theme={theme} setTheme={setTheme}/>
->>>>>>> 482939205fd702f4850b9126d98fcc8ca25664a4
+          <ThemeButton 
+            theme={theme} 
+            setTheme={setTheme}/>
         </header>
         <Switch>
           <Route path="/">
