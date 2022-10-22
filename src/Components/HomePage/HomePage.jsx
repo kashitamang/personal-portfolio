@@ -1,11 +1,10 @@
 import React from 'react';
-import '../styles/HomePage.css';
-import avatar from '../assets/avatar.jpg';
+import styles from './HomePage.module.scss';
+import avatar from '../../assets/avatar.jpg';
 
 export default function HomePage() {
-  console.log('sneakin around?'); //eslint-disable-line
   return (
-    <div className="homepage">
+    <div className={styles.HomePage}>
       <div className="greeting">
         <h1>
           <span className="wave"> 👋🏽 </span> Hey,
