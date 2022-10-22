@@ -1,4 +1,14 @@
 .Header {
+  height: 10vh;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid var(--dark-grey);
+  background-color: var(--almost-black);
+  padding-right: 40px;
+
   button {
     color: var(--yellow);
     padding: 20px;

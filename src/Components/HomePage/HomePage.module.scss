@@ -1,4 +1,11 @@
 .HomePage {
+  h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
   img {
     height: 300px;
   }

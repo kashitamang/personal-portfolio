@@ -1,1 +1,45 @@
+/* dark */
+.dark {
+  background-color: var(--almost-black);
+  color: var(--lightest-grey);
+}
 
+.dark h1 {
+    font-size: 4rem;
+    color: var(--lightest-grey);
+  }
+
+  .dark h2 {
+    color: var(--green);
+  }
+
+  .dark h4 {
+    color: var(--light-grey);
+  }
+
+  .dark p {
+    color: rgb(238, 238, 238);
+  }
+
+/* light */
+.light {
+    background-color: var(--lightest-grey);
+    color: var(--almost-black);
+  }
+
+  .light h1 {
+    font-size: 4rem;
+    color: var(--blue);
+  }
+
+  .light h2 {
+    color: var(--green);
+  }
+
+  .light h4 {
+    color: var(--light-grey);;
+  }
+
+  .light p {
+    color: var(--almost-black);
+  }

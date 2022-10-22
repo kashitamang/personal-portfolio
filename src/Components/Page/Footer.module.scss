@@ -1,4 +1,9 @@
 .Footer {
+    margin: 0px 0px 0px 0px;
+    background-color: var(--almost-black);
+    border-top: 1px solid var(--dark-grey);
+    padding-right: 40px;
+    
     a img {
         height: 25px;
     }
@@ -10,4 +15,8 @@
             transform: rotateZ(7deg);
     }
 
+    h4 {
+        display: flex;
+        align-items: center;
+    }
 }
