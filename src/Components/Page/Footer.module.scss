@@ -1,8 +1,9 @@
 .Footer {
-    margin: 0px 0px 0px 0px;
-    background-color: var(--almost-black);
-    border-top: 1px solid var(--dark-grey);
     padding-right: 40px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     
     a img {
         height: 25px;

@@ -1,0 +1,50 @@
+.ContactPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .InfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  img {
+    height: 300px;
+  }
+
+  a img {
+    height: 30px;
+  }
+
+  a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: var(--blue);
+  }
+
+  a:hover {
+    color: var(--yellow);
+  }
+
+  a img:hover {
+    filter: invert(100%);
+  }
+
+  h2 {
+    display: flex;
+  }
+
+  .Avatar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

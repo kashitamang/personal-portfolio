@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.Footer}>
       <h4>
-        find me on{' '}
+        find samples of my work on
         <a href="https://github.com/kashitamang">
           <img src={githubLogo} alt="black github logo" className="rotate"/>
         </a>

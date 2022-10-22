@@ -15,13 +15,16 @@ export default function HomePage() {
         <img
           src={avatar}
           alt="person with a medium skintone and shoulder length brown hair smiling"
-        ></img>
+        />
       </div>
-      <h2>
-        I&rsquo;m a Full Stack Software Engineer in Portland, Oregon currently working on solo projects like
-        this one...
-      </h2>
-      <p>While we are under construction here, would you like to check out some of my projects?</p>
+      <h2>I&rsquo;m a Full Stack Software Engineer in Portland, Oregon.</h2>
+      <p>
+        I am passionate about team building, and delivering well-crafted apps with a plan.
+        <br></br>
+        <br></br>
+        In my spare time, I enjoy participating in community mutual aid, supporting small
+        businesses, making electronic music, and designing clothes for my friends.
+      </p>
     </div>
   );
 }

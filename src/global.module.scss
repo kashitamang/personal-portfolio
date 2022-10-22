@@ -4,17 +4,21 @@
 :root {
   /* colors */
   --lightest-grey: #f4fafa;
-  --light-grey: #AFAFB0;
-  --middle-grey: #404756;
+  --light-grey: #efefef;
+  --middle-grey: #979ba3;
+  --grey: rgb(168, 168, 168);
   --dark-grey: #282C34;
   --almost-black: #0d1117;
   --green: #238636;
-  --blue: #58A6FF;
+  --blue: #2766B1;
   --yellow: #FDB92D;
   /* fonts  */
   --apple-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+:root {
+  background-color: none;
+}
 
 body {
   height: 100vh;
@@ -33,13 +37,6 @@ main {
   padding: 100px;
 }
 
-footer {
-  margin: 0px 0px 0px 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
 
 p {
   font-size: 1.2rem;

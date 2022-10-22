@@ -14,11 +14,19 @@
   }
 
   .dark h4 {
-    color: var(--light-grey);
+    color: var(--grey);
   }
 
   .dark p {
     color: rgb(238, 238, 238);
+  }
+
+  .dark header {
+    border-bottom: 1px solid var(--dark-grey);
+  }
+
+  .dark footer {
+    border-top: 1px solid var(--dark-grey);
   }
 
 /* light */
@@ -37,9 +45,29 @@
   }
 
   .light h4 {
-    color: var(--light-grey);;
+    color: var(--yellow);
   }
 
   .light p {
     color: var(--almost-black);
+  }
+
+  .light header a:hover {
+    color: var(--almost-black);
+  }
+
+  .light header {
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  .light footer {
+    border-top: 1px solid var(--light-grey);
+  }
+
+  .light header button:hover {
+    color: var(--almost-black);
+  }
+
+  .light footer a img {
+    filter: invert(90%);
   }
