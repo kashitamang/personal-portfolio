@@ -5,13 +5,13 @@ import avatar from '../../assets/avatar.jpg';
 export default function HomePage() {
   return (
     <div className={styles.HomePage}>
-      <div className="greeting">
+      <div className={styles.Greeting}>
         <h1>
-          <span className="wave"> 👋🏽 </span> Hey,
+          <span className={styles.Wave}> 👋🏽 </span> Hey,
         </h1>
         <h1>I&rsquo;m Kashi</h1>
       </div>
-      <div className="avatar-container">
+      <div className={styles.AvatarContainer}>
         <img
           src={avatar}
           alt="person with a medium skintone and shoulder length brown hair smiling"

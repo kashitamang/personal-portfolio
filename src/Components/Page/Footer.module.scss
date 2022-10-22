@@ -1,0 +1,13 @@
+.Footer {
+    a img {
+        height: 25px;
+    }
+
+    a img:hover
+    {
+            -webkit-transform: rotateZ(7deg);
+            -ms-transform: rotateZ(7deg);
+            transform: rotateZ(7deg);
+    }
+
+}
