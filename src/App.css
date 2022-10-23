@@ -81,3 +81,9 @@ body::-webkit-scrollbar {
   .light footer a img {
     filter: invert(90%);
   }
+
+  @media (max-width: 600px) { 
+    .App button {
+      display: none;
+    }
+  }
