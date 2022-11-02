@@ -14,7 +14,7 @@ export default function HomePage() {
       <div className={styles.AvatarContainer}>
         <img
           src={avatar}
-          alt="person with a medium skintone and shoulder length brown hair smiling"
+          alt="apple memoji of a person with a medium skintone and shoulder length brown hair smiling"
         />
       </div>
       <h2>I&rsquo;m a Full Stack Software Engineer in Portland, Oregon.</h2>

@@ -9,7 +9,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* dark */
 .dark {
+  background-color: var(--almost-black);
+  color: var(--lightest-grey);
+}
+
+.dark body {
   background-color: var(--almost-black);
   color: var(--lightest-grey);
 }
@@ -33,10 +39,12 @@ body::-webkit-scrollbar {
 
   .dark header {
     border-bottom: 1px solid var(--dark-grey);
+    background-color: var(--almost-black);
   }
 
   .dark footer {
     border-top: 1px solid var(--dark-grey);
+    background-color: var(--almost-black);
   }
 
 /* light */
@@ -68,10 +76,12 @@ body::-webkit-scrollbar {
 
   .light header {
     border-bottom: 1px solid var(--light-grey);
+    background-color: var(--lightest-grey);
   }
 
   .light footer {
     border-top: 1px solid var(--light-grey);
+    background-color: var(--lightest-grey);
   }
 
   .light header button:hover {
