@@ -1,9 +1,9 @@
 /* dark */
 
-.App {
+/* .App {
   height: 100vh;
   width: 100vw;
-}
+} */
 
 body::-webkit-scrollbar {
   display: none;
@@ -13,10 +13,7 @@ body::-webkit-scrollbar {
 .dark {
   background-color: var(--almost-black);
   color: var(--lightest-grey);
-}
-
-.dark, body{
-  background-color: var(--almost-black);
+  min-height: 100vh;
 }
 
 .dark h1 {
@@ -38,10 +35,12 @@ body::-webkit-scrollbar {
 
   .dark header {
     border-bottom: 1px solid var(--dark-grey);
+    background-color: var(--almost-black);
   }
 
   .dark footer {
     border-top: 1px solid var(--dark-grey);
+    background-color: var(--almost-black);
   }
 
 /* light */
@@ -49,8 +48,8 @@ body::-webkit-scrollbar {
     background-color: var(--lightest-grey);
     color: var(--almost-black);
   }
-
-  .light body {
+  /* body is a parent element how do i target this?? */
+  .light, body {
     background-color: var(--lightest-grey);
     color: var(--almost-black);
   }
