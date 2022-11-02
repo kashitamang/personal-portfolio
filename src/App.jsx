@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './global.module.scss';
 import './App.css';
-import Layout from './components/Page/Layout';
-import HomePage from './components/HomePage/HomePage';
-import ContactPage from './components/ContactPage/ContactPage';
+import Layout from './Components/Page/Layout';
+import HomePage from './Components/HomePage/HomePage';
+import ContactPage from './Components/ContactPage/ContactPage';
 
 import { useThemeContext } from './state/ThemeProvider';
 
