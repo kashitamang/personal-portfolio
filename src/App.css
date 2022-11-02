@@ -10,9 +10,13 @@ body::-webkit-scrollbar {
 }
 
 /* dark */
-.dark, main, body, div, footer, header {
+.dark {
   background-color: var(--almost-black);
   color: var(--lightest-grey);
+}
+
+.dark, body{
+  background-color: var(--almost-black);
 }
 
 .dark h1 {
@@ -41,7 +45,7 @@ body::-webkit-scrollbar {
   }
 
 /* light */
-.light, main, body, div, footer, header {
+.light {
     background-color: var(--lightest-grey);
     color: var(--almost-black);
   }
