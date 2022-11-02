@@ -10,12 +10,7 @@ body::-webkit-scrollbar {
 }
 
 /* dark */
-.dark {
-  background-color: var(--almost-black);
-  color: var(--lightest-grey);
-}
-
-.dark body {
+.dark, main, body, div, footer, header {
   background-color: var(--almost-black);
   color: var(--lightest-grey);
 }
@@ -39,16 +34,19 @@ body::-webkit-scrollbar {
 
   .dark header {
     border-bottom: 1px solid var(--dark-grey);
-    background-color: var(--almost-black);
   }
 
   .dark footer {
     border-top: 1px solid var(--dark-grey);
-    background-color: var(--almost-black);
   }
 
 /* light */
-.light {
+.light, main, body, div, footer, header {
+    background-color: var(--lightest-grey);
+    color: var(--almost-black);
+  }
+
+  .light body {
     background-color: var(--lightest-grey);
     color: var(--almost-black);
   }
