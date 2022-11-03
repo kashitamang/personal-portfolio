@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  /* colors */
+  --lightest-grey: #ebfae0;
+  --light-grey: #efefef;
+  --middle-grey: #979ba3;
+  --grey: rgb(168, 168, 168);
+  --dark-grey: #282C34;
+  --almost-black: #0d1117;
+  --green: #238636;
+  --blue: #2766B1;
+  --yellow: #FDB92D;
+  /* fonts  */
+  --apple-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+:root {
+  background-color: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px 0px 0px 0px;
+  font-family: var(--apple-system);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main {
+  padding: 100px;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+button:hover {
+  cursor: pointer;
+}

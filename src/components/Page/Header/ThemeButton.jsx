@@ -1,13 +1,6 @@
-import '../styles/App.css';
-import { React } from 'react';
-import { useThemeContext } from '../ThemeProvider';
+import { useThemeContext } from '../../../state/ThemeProvider';
 
 export default function ThemeButton() {
-
-  const {
-    theme, 
-    setTheme,
-  } = useThemeContext();
 
   const toggleTheme = () => {
     if (theme === 'dark') {
@@ -16,13 +9,18 @@ export default function ThemeButton() {
       setTheme('dark');
     }
   };
+
+  const {
+    theme, 
+    setTheme,
+  } = useThemeContext();
   return (
     <button
-      title="change theme"
+      title={`${theme === 'light' ? 'switch to dark mode' : 'switch to light mode'}`}
       className={`material-symbols-${theme === 'dark' ? 'outlined' : 'rounded'}`}
       onClick={toggleTheme}
     >
-      {`${theme === 'dark' ? 'dark_mode' : 'light_mode'}`}
+      {`${theme === 'light' ? 'dark_mode' : 'light_mode'}`}
     </button>
   );
 }
