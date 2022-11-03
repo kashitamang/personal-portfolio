@@ -6,10 +6,8 @@ export default function HomePage() {
   return (
     <div className={styles.HomePage}>
       <div className={styles.Greeting}>
-        <h1>
-          <span className={styles.Wave}> 👋🏽 </span> Hey,
-        </h1>
-        <h1>I&rsquo;m Kashi</h1>
+        <h1>Hey,</h1>
+        <h1 className={styles.TypeWriter}> I&rsquo;m Kashi</h1>
       </div>
       <div className={styles.AvatarContainer}>
         <img

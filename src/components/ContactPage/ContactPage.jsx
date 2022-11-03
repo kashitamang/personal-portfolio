@@ -7,7 +7,11 @@ export default function ContactPage() {
     <div className={styles.ContactPage}>
       <div className={styles.TitleContainer}>
         <div>
-          <h1>Contact Me</h1>
+          <h1>
+          Say<br></br>
+          Hey
+            <span className={styles.Wave}> 📞 </span>
+          </h1>
         </div>
         <div className={styles.AvatarContainer}>
           <img
