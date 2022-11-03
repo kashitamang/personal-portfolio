@@ -1,5 +1,4 @@
 import styles from './ContactPage.module.scss';
-import avatar from '../../assets/avatar.jpg';
 import LinkedInLogo from '../../assets/LinkedIn_Logo.png';
 
 export default function ContactPage() {
@@ -8,16 +7,9 @@ export default function ContactPage() {
       <div className={styles.TitleContainer}>
         <div>
           <h1>
-          Say<br></br>
-          Hey
-            <span className={styles.Wave}> 📞 </span>
+            <h1><span className={styles.Wave}> 👋🏽 </span> 
+            Say hello,</h1>
           </h1>
-        </div>
-        <div className={styles.AvatarContainer}>
-          <img
-            src={avatar}
-            alt="person with a medium skintone and shoulder length brown hair smiling"
-          />
         </div>
       </div>
 
