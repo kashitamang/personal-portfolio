@@ -7,9 +7,9 @@ export default function Navigation() {
       <NavLink to="/" alt="home" title="home">
         Home
       </NavLink>
-      <NavLink to="projects" alt="projects" title="projects">
+      {/* <NavLink to="projects" alt="projects" title="projects">
         Projects
-      </NavLink>
+      </NavLink> */}
       <NavLink to="contact" alt="contact" title="contact">
         Contact
       </NavLink>
