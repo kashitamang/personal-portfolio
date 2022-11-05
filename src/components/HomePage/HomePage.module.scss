@@ -1,7 +1,12 @@
 .HomePage {
-  height: 100vh;
-
   .Greeting {
+    // mobile
+    @media (max-width: 759px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .TypeWriter {
       font-family: monospace;
       overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -10,20 +15,34 @@
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: 0.15em; /* Adjust as needed */
       animation: typing 4.5s steps(30, end), blink-caret 0.7s step-end infinite;
+      // mobile
+      @media (max-width: 759px) {
+        font-size: 2.5rem;
+      }
     }
   }
 
   .AvatarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    //desktop
+    @media (min-width: 760px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    // mobile
+    @media (max-width: 759px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   img {
     height: 300px;
   }
   /* animation */
-
 
   /* The typing effect */
   @keyframes typing {

@@ -1,21 +1,29 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './global.module.scss';
 import './App.css';
+
 import Layout from './components/Page/Layout';
 import HomePage from './components/HomePage/HomePage';
 import ContactPage from './components/ContactPage/ContactPage';
+import ProjectsPage from './components/Projects/ProjectsPage';
+
+import { useThemeContext } from './state/ThemeProvider';
 
 function App() {
+  const { theme } = useThemeContext();
   return (
-    <Router>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="contact" element={<ContactPage />} />
-        </Route>
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </Router>
+    <div className={`App ${theme}`}>
+      <Router>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
