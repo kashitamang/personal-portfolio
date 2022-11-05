@@ -1,12 +1,12 @@
 .HomePage {
   .Greeting {
-        // mobile
-        @media (max-width: 759px) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+    // mobile
+    @media (max-width: 759px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .TypeWriter {
       font-family: monospace;
       overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -27,7 +27,7 @@
     @media (min-width: 760px) {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: space-between;
     }
 
     // mobile
