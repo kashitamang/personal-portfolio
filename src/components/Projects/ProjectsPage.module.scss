@@ -1,7 +1,69 @@
-.ProjectsPage{
-    .ProjectContainer{
-        border: 1px solid var(--light-grey);
-        border-radius: var(--border-radius);
-        padding: 20px;
+.ProjectsPage {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .ProjectContainer {
+    padding: 30px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      display: flex;
     }
+
+    ul {
+      padding: 20px;
+
+      li {
+        list-style-type: none;
+      }
+      li img {
+        //desktop
+        @media (min-width: 760px) {
+          height: 300px;
+        }
+
+        // mobile
+        @media (max-width: 759px) {
+          height: 200px;
+        }
+      }
+    }
+
+    .ProjectLinks {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: inherit;
+      }
+
+      a h2:hover {
+        color: var(--grey);
+      }
+    }
+
+    .BuildContainer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .BuildItem {
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 254, 254);
+        color: black;
+        padding: 5px 10px 5px 10px;
+        margin-right: 10px;
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
