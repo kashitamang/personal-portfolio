@@ -54,6 +54,15 @@ body::-webkit-scrollbar {
     background-color: var(--almost-black);
   }
 
+  .dark a:hover {
+    color: var(--grey);
+  }
+
+  .dark a h2:hover {
+    color: var(--grey);
+    text-decoration: underline;
+  }
+
 /* light */
 .light {
     background-color: var(--lightest-grey);

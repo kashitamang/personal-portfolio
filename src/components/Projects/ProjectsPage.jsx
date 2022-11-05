@@ -1,12 +1,15 @@
 import React from 'react';
-import StellarView from './StellarView';
 import styles from './ProjectsPage.module.scss';
+import StellarView from './StellarView';
+import BooBot from './BooBot';
+import ProjectsPageNavigation from './ProjectsPageNavigation';
 
 export default function ProjectsPage() {
   return (
     <div className={styles.ProjectsPage}>
-      <h1>Recent Projects...</h1>
-      <StellarView/>
+      <ProjectsPageNavigation />
+      <StellarView />
+      <BooBot />
     </div>
   );
 }
