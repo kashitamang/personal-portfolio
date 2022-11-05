@@ -2,7 +2,7 @@ import styles from './ProjectsPage.module.scss';
 import booBotSchema from '../../assets/booBot_schema.jpg';
 export default function BooBot() {
   return (
-    <div className={styles.ProjectContainer}>
+    <div className={styles.ProjectContainer} id='boobot'>
       <h1>boo!Bot</h1>
       <div className={styles.ProjectLinks}>
         <a href="https://boo-bot-server.herokuapp.com/" title="view API" alt="view API">

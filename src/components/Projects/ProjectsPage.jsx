@@ -2,12 +2,14 @@ import React from 'react';
 import styles from './ProjectsPage.module.scss';
 import StellarView from './StellarView';
 import BooBot from './BooBot';
+import ProjectsPageNavigation from './ProjectsPageNavigation';
 
 export default function ProjectsPage() {
   return (
     <div className={styles.ProjectsPage}>
-      <StellarView/>
-      <BooBot/>
+      <ProjectsPageNavigation />
+      <StellarView />
+      <BooBot />
     </div>
   );
 }

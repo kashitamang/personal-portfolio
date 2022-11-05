@@ -4,7 +4,7 @@ import stellarViewSchema from '../../assets/stellarView_database_schema.jpg';
 
 export default function StellarView() {
   return (
-    <div className={styles.ProjectContainer}>
+    <div className={styles.ProjectContainer} id='stellarview'>
       <h1>StellarView</h1>
       <div className={styles.ProjectLinks}>
         <a href="https://stellarview.netlify.app/welcome" title="view code" alt="view code">
