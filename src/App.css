@@ -1,9 +1,11 @@
 /* dark */
 
-/* .App {
-  height: 100vh;
-  width: 100vw;
-} */
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
 
 body::-webkit-scrollbar {
   display: none;
@@ -13,7 +15,15 @@ body::-webkit-scrollbar {
 .dark {
   background-color: var(--almost-black);
   color: var(--lightest-grey);
-  min-height: 100vh;
+}
+
+.dark body {
+  background-color: var(--almost-black);
+}
+
+.dark main {
+  background-color: var(--almost-black);
+  background: repeat;
 }
 
 .dark h1 {
@@ -91,10 +101,4 @@ body::-webkit-scrollbar {
 
   .light footer a img {
     filter: invert(90%);
-  }
-
-  @media (max-width: 600px) { 
-    .App button {
-      display: none;
-    }
   }
