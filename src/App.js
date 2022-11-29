@@ -5,7 +5,10 @@ import './App.css';
 import Layout from './components/Page/Layout';
 import HomePage from './components/HomePage/HomePage';
 import ContactPage from './components/ContactPage/ContactPage';
-import ProjectsPage from './components/Projects/ProjectsPage';
+import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import StellarView from './components/ProjectsPage/StellarView';
+import BooBot from './components/ProjectsPage/BooBot';
+import ProjectsPageNavigation from './components/ProjectsPage/ProjectsPageNavigation';
 
 import { useThemeContext } from './state/ThemeProvider';
 
@@ -16,9 +19,13 @@ function App() {
       <Router>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<HomePage />} />
+            <Route index path="/" element={<HomePage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="projects" element={<ProjectsPage />}>
+              <Route index element={<ProjectsPageNavigation/>}/>
+              <Route path="stellarview" element={<StellarView/>} />
+              <Route path="boobot" element={<BooBot/>} />
+            </Route>
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

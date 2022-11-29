@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './ProjectsPage.module.scss';
 
-export default function ProjectsList() {
+export default function ProjectsPageNavigation() {
   return (
-    <div className={styles.ProjectsList}>
+    <nav className={styles.ProjectsList}>
       <Link to="stellarview" alt="StellarView" title="StellarView">
         <h4>2022 / Full Stack Engineer</h4>
         <h1>StellarView</h1>
@@ -14,10 +13,6 @@ export default function ProjectsList() {
         <h4>2022 / Backend Engineer</h4>
         <h1>Boo!Bot</h1>
       </Link>
-      <Link to="printstagram" alt="Printstagram" title="Printstagram">
-        <h4>2022 / Full Stack Engineer</h4>
-        <h1>Printstagram</h1>
-      </Link>
-    </div>
+    </nav>
   );
 }

@@ -1,15 +1,10 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import styles from './ProjectsPage.module.scss';
-import StellarView from './StellarView';
-import BooBot from './BooBot';
-import ProjectsList from './ProjectsList';
-
 export default function ProjectsPage() {
   return (
     <div className={styles.ProjectsPage}>
-      <ProjectsList />
-      {/* <StellarView />
-      <BooBot /> */}
+      <Outlet/>
     </div>
   );
 }
