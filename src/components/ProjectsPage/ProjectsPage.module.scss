@@ -30,12 +30,17 @@
         @media (max-width: 759px) {
           font-size: 2rem;
         }
+
+        :hover {
+          cursor: pointer;
+        }
       }
+
       h4 {
         //desktop
-      @media (min-width: 760px) {
-        padding-right: 40px;
-      }
+        @media (min-width: 760px) {
+          padding-right: 40px;
+        }
       }
     }
   }

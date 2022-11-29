@@ -7,11 +7,11 @@ export default function ProjectsPageNavigation() {
     <nav className={styles.ProjectsList}>
       <Link to="stellarview" alt="StellarView" title="StellarView">
         <h4>2022 / Full Stack Engineer</h4>
-        <h1>StellarView</h1>
+        <h1 className="underline">StellarView</h1>
       </Link>
       <Link to="boobot" alt="Boo!Bot" title="Boo!Bot">
         <h4>2022 / Backend Engineer</h4>
-        <h1>Boo!Bot</h1>
+        <h1 className="underline">Boo!Bot</h1>
       </Link>
     </nav>
   );
