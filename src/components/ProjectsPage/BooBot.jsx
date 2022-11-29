@@ -6,21 +6,21 @@ export default function BooBot() {
       <h1>boo!Bot</h1>
       <div className={styles.ProjectLinks}>
         <a href="https://boo-bot-server.herokuapp.com/" title="view API" alt="view API">
-          <h2> API </h2>
+          <h2 className="underline"> API </h2>
         </a>
         <a
           href="https://marketplace.visualstudio.com/items?itemName=booatthebot.booBOT"
           title="find it on the marketplace"
           alt="find it on the marketplace"
         >
-          <h2> Marketplace </h2>
+          <h2 className="underline"> Marketplace </h2>
         </a>
         <a
           href="https://github.com/orgs/boo-BOT-Team/repositories"
           title="view code"
           alt="view code"
         >
-          <h2> View Code </h2>
+          <h2 className="underline"> View Code </h2>
         </a>
       </div>
       <div className={styles.BuildContainer}>

@@ -7,8 +7,10 @@ export default function ContactPage() {
       <div className={styles.TitleContainer}>
         <div>
           <h1>
-            <h1><span className={styles.Wave}> 👋🏽 </span> 
-            Say hello,</h1>
+            <h1>
+              <span className={styles.Wave}> 👋🏽 </span>
+              Say hello,
+            </h1>
           </h1>
         </div>
       </div>
@@ -17,13 +19,15 @@ export default function ContactPage() {
         <h2>
           {`Connect on  `}
           <a href="https://www.linkedin.com/in/kashitamang">
-            <img src={LinkedInLogo} alt="blue linkedin logo" />
+            <h3 className="underline">
+              <img src={LinkedInLogo} alt="blue linkedin logo" />
+            </h3>
           </a>
         </h2>
         <h2>
           {`View my `}
           <a href="https://drive.google.com/file/d/1Pr-gs-7G7uPV4Ywo4l44Nloxw7_cGp73/view">
-            Resume
+            <h3 className="underline">Resume</h3>
           </a>
         </h2>
       </div>

@@ -53,15 +53,6 @@ body::-webkit-scrollbar {
   background-color: var(--almost-black);
 }
 
-.dark a:hover {
-  color: var(--grey);
-}
-
-.dark a h2:hover {
-  color: var(--grey);
-  text-decoration: underline;
-}
-
 .dark a .underline {
   position: relative;
   text-decoration: none;

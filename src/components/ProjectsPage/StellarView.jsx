@@ -8,10 +8,10 @@ export default function StellarView() {
       <h1>StellarView</h1>
       <div className={styles.ProjectLinks}>
         <a href="https://stellarview.netlify.app/welcome" title="view code" alt="view code">
-          <h2> Live Demo </h2>
+          <h2 className="underline"> Live Demo </h2>
         </a>
         <a href="https://github.com/stellarview" title="view deploy" alt="view deploy">
-          <h2> View Code </h2>
+          <h2 className="underline"> View Code </h2>
         </a>
       </div>
       <div className={styles.BuildContainer}>
