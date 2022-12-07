@@ -5,7 +5,7 @@ export default function BooBot() {
     <div className={styles.ProjectContainer} id='boobot'>
       <h1>boo!Bot</h1>
       <div className={styles.ProjectLinks}>
-        <a href="https://boo-bot-server.herokuapp.com/" title="view API" alt="view API">
+        <a href="https://boo-bot-server-express.adaptable.app/" title="view API" alt="view API">
           <h2 className="underline"> API </h2>
         </a>
         <a
