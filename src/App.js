@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { useEffect } from 'react';
 import './global.module.scss';
 import './App.css';
 
@@ -11,14 +10,9 @@ import StellarView from './components/ProjectsPage/StellarView';
 import BooBot from './components/ProjectsPage/BooBot';
 import ProjectsPageNavigation from './components/ProjectsPage/ProjectsPageNavigation';
 import { useThemeContext } from './state/ThemeProvider';
-import { fairyDustCursor } from 'cursor-effects';
 
 function App() {
   const { theme } = useThemeContext();
-
-  useEffect(() => {
-    fairyDustCursor({ colors: ['#238636', '#2766b1'] });
-  });
 
   return (
     <div className={`App ${theme}`}>
