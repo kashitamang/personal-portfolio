@@ -12,9 +12,10 @@ export default function HomePage() {
         </div>
         <Avatar />
       </div>
-      <h2>I&rsquo;m a Full Stack Software Engineer in Portland, Oregon.</h2>
+      <h2>I&rsquo;m a Mobile Engineer, currently working at Nike.</h2>
       <p>
-        I build well-crafted apps with a plan, and am passionate about user experience.
+        I love helping build and deliver well-crafted apps with a plan, and am passionate about user
+        experience.
         <br></br>
         <br></br>
         In my spare time, I enjoy participating in community mutual aid, supporting small
