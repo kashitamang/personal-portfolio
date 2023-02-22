@@ -9,11 +9,11 @@ import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import StellarView from './components/ProjectsPage/StellarView';
 import BooBot from './components/ProjectsPage/BooBot';
 import ProjectsPageNavigation from './components/ProjectsPage/ProjectsPageNavigation';
-
 import { useThemeContext } from './state/ThemeProvider';
 
 function App() {
   const { theme } = useThemeContext();
+
   return (
     <div className={`App ${theme}`}>
       <Router>
@@ -22,9 +22,9 @@ function App() {
             <Route index path="/" element={<HomePage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="projects" element={<ProjectsPage />}>
-              <Route index element={<ProjectsPageNavigation/>}/>
-              <Route path="stellarview" element={<StellarView/>} />
-              <Route path="boobot" element={<BooBot/>} />
+              <Route index element={<ProjectsPageNavigation />} />
+              <Route path="stellarview" element={<StellarView />} />
+              <Route path="boobot" element={<BooBot />} />
             </Route>
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
