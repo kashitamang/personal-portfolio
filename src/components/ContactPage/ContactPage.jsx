@@ -26,7 +26,7 @@ export default function ContactPage() {
         </h2>
         <h2>
           {`View my `}
-          <a href="https://drive.google.com/file/d/1Pr-gs-7G7uPV4Ywo4l44Nloxw7_cGp73/view">
+          <a href="https://docs.google.com/document/d/1QVdR52uomXv5ij6osklLXVcB8Z8Cqd0a/edit">
             <h3 className="underline">Resume</h3>
           </a>
         </h2>
